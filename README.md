@@ -196,6 +196,8 @@ These guidelines bias toward **caution over speed**. For trivial changes (obviou
 
 The goal is reducing costly mistakes on non-trivial work, not slowing down simple tasks.
 
+**Token cost:** `CLAUDE.md` is intentionally compact (~650 words, ~1k tokens always-on). The longer examples live in the [field guide](https://bettercallsundim.github.io/vibechecks/) and plugin skill — so teams can choose always-on vs on-demand guidance.
+
 ---
 
 ## Contributing
