@@ -1,7 +1,7 @@
 {
   "name": "vibechecks",
   "version": "1.0.0",
-  "description": "11 principles + 12 named failure modes for Claude Code. Cuts down hallucinated APIs, drive-by refactors, sycophancy, symptom-patching, and the rest of the LLM Failure Zoo. Drop in CLAUDE.md, plus /principles and /failure-zoo slash commands.",
+  "description": "11 principles + 12 named failure modes for Claude Code. Cuts down hallucinated APIs, drive-by refactors, sycophancy, and symptom-patching. Installs the /vibechecks:vibechecks skill. Pair with CLAUDE.md for always-on project context.",
   "author": {
     "name": "Vibechecks contributors",
     "url": "https://github.com/bettercallsundim/vibechecks"

@@ -7,9 +7,11 @@
 [![Field Guide](https://img.shields.io/badge/site-Failure%20Field%20Guide-47b8ff?labelColor=0a0a0a)](index.html)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
+[![Vibechecks field guide](og-image.png)](https://bettercallsundim.github.io/vibechecks/)
+
 **Interactive site:** open [index.html](index.html) for the visual Failure Zoo with bad/good code for every anti-pattern.
 
-This extends [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills), itself derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
+Inspired by [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls, extended via [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills).
 
 A single `CLAUDE.md` file you can drop into any project to make Claude Code, Cursor, Windsurf, Copilot, or any project-rule-reading agent more cautious, verifiable, and boring in the best way. The companion field guide gives every common mistake a short name so teams can correct behavior without writing a paragraph every time.
 
@@ -26,10 +28,8 @@ A single `CLAUDE.md` file you can drop into any project to make Claude Code, Cur
 
 You get:
 
-- **`CLAUDE.md`** auto-injected into every session — the 11 principles always in context.
-- **`/principles`** — recite the 11 principles and apply them to the current task.
-- **`/failure-zoo`** — list the 12 named anti-patterns with a follow-up prompt.
-- **`vibechecks` skill** — auto-triggers on coding tasks, code review, and refactoring.
+- **`/vibechecks:vibechecks`** skill — invoke manually, or auto-triggers on coding/review/refactor tasks. Contains the full 11 principles + Failure Zoo reference.
+- **`CLAUDE.md`** at project root — copy via curl (see below) to get always-on principle injection in any session.
 
 ### As a plain CLAUDE.md (any agent)
 
