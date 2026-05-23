@@ -50,8 +50,7 @@ Smoke-test the plugin locally before pushing:
 # In any Claude Code session:
 /plugin marketplace add /absolute/path/to/this/repo
 /plugin install vibechecks@vibechecks
-/principles
-/failure-zoo
+/vibechecks:vibechecks
 ```
 
 If `/principles` and `/failure-zoo` work and the skill is listed in your active skills, you're good.

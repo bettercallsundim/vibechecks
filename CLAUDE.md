@@ -1,6 +1,6 @@
 # CLAUDE.md — Vibechecks
 
-11 principles to reduce common LLM coding mistakes. For the full Failure Zoo with bad/good examples, run `/failure-zoo`.
+11 principles to reduce common LLM coding mistakes. For bad/good code examples on each failure mode, invoke `/vibechecks:vibechecks`.
 
 **Bias toward caution over speed. For trivial tasks, use judgment.**
 
@@ -43,7 +43,7 @@ Fix the cause, not the symptom. Don't suppress failing tests, silence type error
 
 ## Failure Zoo — 12 Named Anti-Patterns
 
-When you notice drift, name it and self-correct. Run `/failure-zoo` for bad/good code examples.
+When you notice drift, name it and self-correct.
 
 | # | Name | One-line tell |
 |---|------|---------------|

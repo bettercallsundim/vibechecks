@@ -28,7 +28,7 @@ A single `CLAUDE.md` file you can drop into any project to make Claude Code, Cur
 
 You get:
 
-- **`/vibechecks:vibechecks`** skill — invoke manually, or auto-triggers on coding/review/refactor tasks. Contains the full 11 principles + Failure Zoo reference.
+- **`/vibechecks:vibechecks`** skill — invoke manually for the full principles + Failure Zoo reference. May auto-trigger on coding, review, or refactor tasks based on context.
 - **`CLAUDE.md`** at project root — copy via curl (see below) to get always-on principle injection in any session.
 
 ### As a plain CLAUDE.md (any agent)
