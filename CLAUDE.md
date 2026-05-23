@@ -1,6 +1,6 @@
 # CLAUDE.md — Vibechecks
 
-11 principles to reduce common LLM coding mistakes. For bad/good code examples on each failure mode, invoke `/vibechecks:vibechecks`.
+11 principles to reduce common LLM coding mistakes. For bad/good code examples, see the [field guide](https://bettercallsundim.github.io/vibechecks/) or invoke `/vibechecks:vibechecks` if the plugin is installed.
 
 **Bias toward caution over speed. For trivial tasks, use judgment.**
 

@@ -53,7 +53,7 @@ Smoke-test the plugin locally before pushing:
 /vibechecks:vibechecks
 ```
 
-If `/principles` and `/failure-zoo` work and the skill is listed in your active skills, you're good.
+If `/vibechecks:vibechecks` responds and the skill is listed in your active skills, you're good.
 
 ## 2. Enable GitHub Pages
 
