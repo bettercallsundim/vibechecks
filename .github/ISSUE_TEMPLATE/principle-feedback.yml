@@ -1,0 +1,39 @@
+name: "📐 Principle Feedback"
+description: Sharpen, refine, or challenge one of the 11 principles.
+title: "[Principle] "
+labels: ["principle-feedback", "triage"]
+body:
+  - type: dropdown
+    id: principle
+    attributes:
+      label: Which principle?
+      options:
+        - "1. Think Before Coding"
+        - "2. Simplicity First"
+        - "3. Surgical Changes"
+        - "4. Goal-Driven Loops"
+        - "5. Read Before You Write"
+        - "6. Dependency Minimalism"
+        - "7. Honest Reporting"
+        - "8. Name What Can Fail"
+        - "9. Make State & Side Effects Visible"
+        - "10. Comment Fidelity"
+        - "11. Root-Cause Discipline"
+        - "New principle proposal"
+    validations:
+      required: true
+
+  - type: textarea
+    id: case
+    attributes:
+      label: Concrete case where the principle is wrong, ambiguous, or counter-productive
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed refinement
+      description: Exact wording change, or new rule text.
+    validations:
+      required: true

@@ -1,0 +1,74 @@
+name: "🐛 Submit a Failure Mode"
+description: Propose a new named LLM coding failure pattern for the Failure Zoo.
+title: "[Failure Mode] The "
+labels: ["failure-mode", "triage"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Memorable, ideally `The X Y`. Names are how this spreads.
+      placeholder: "The Confident Fabricator"
+    validations:
+      required: true
+
+  - type: input
+    id: tagline
+    attributes:
+      label: Tagline
+      description: The smell, in 12 words or less.
+      placeholder: "Calls methods that don't exist. Looks correct. Breaks at runtime."
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: What it looks like in the wild
+      description: 2–4 sentences. Why does the model fall into this? What's the visible damage?
+    validations:
+      required: true
+
+  - type: textarea
+    id: bad
+    attributes:
+      label: Bad example
+      description: Short code block showing the failure.
+      render: ts
+    validations:
+      required: true
+
+  - type: textarea
+    id: good
+    attributes:
+      label: Good example
+      description: Same shape, fixed.
+      render: ts
+    validations:
+      required: true
+
+  - type: dropdown
+    id: principle
+    attributes:
+      label: Which principle does it violate?
+      options:
+        - "1. Think Before Coding"
+        - "2. Simplicity First"
+        - "3. Surgical Changes"
+        - "4. Goal-Driven Loops"
+        - "5. Read Before You Write"
+        - "6. Dependency Minimalism"
+        - "7. Honest Reporting"
+        - "8. Name What Can Fail"
+        - "9. Make State & Side Effects Visible"
+        - "10. Comment Fidelity"
+        - "11. Root-Cause Discipline"
+        - "Proposes a new principle"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Optional. Related modes, references, prior art.

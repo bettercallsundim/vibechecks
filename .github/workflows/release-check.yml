@@ -1,0 +1,26 @@
+name: Release Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for stale placeholders
+        run: |
+          bad_slug='USER''/REPO'
+          bad_pages='USER''.github.io'
+          ! grep -R "$bad_slug\|$bad_pages" \
+            --exclude-dir=.git \
+            --exclude-dir=.code-review-graph \
+            .
+
+      - name: Check JavaScript helper syntax
+        run: node --check scripts/generate-og.js
+
+      - name: Verify core files exist
+        run: test -f CLAUDE.md -a -f README.md -a -f index.html -a -f og-image.png

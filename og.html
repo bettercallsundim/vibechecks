@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OG Image — Vibechecks</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;900&display=swap");
+
+      :root {
+        --bg: #0a0a0a;
+        --surface: #111;
+        --border: #222;
+        --accent: #e8ff47;
+        --accent2: #ff4747;
+        --text: #f0f0f0;
+        --muted: #666;
+        --mono: "Space Mono", monospace;
+        --sans: "Syne", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--mono);
+      }
+
+      .card {
+        width: 1200px;
+        height: 630px;
+        background: var(--bg);
+        position: relative;
+        overflow: hidden;
+        padding: 64px 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(232, 255, 71, 0.055) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(232, 255, 71, 0.055) 1px, transparent 1px);
+        background-size: 58px 58px;
+        mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
+        pointer-events: none;
+      }
+
+      .card::after {
+        content: none;
+      }
+
+      .label {
+        font-family: var(--mono);
+        font-size: 16px;
+        letter-spacing: 0.25em;
+        color: var(--accent);
+        text-transform: uppercase;
+        z-index: 1;
+      }
+
+      .label::before {
+        content: "∗ ";
+      }
+
+      .title {
+        font-family: var(--sans);
+        font-size: 96px;
+        font-weight: 900;
+        line-height: 0.92;
+        letter-spacing: 0;
+        z-index: 1;
+      }
+
+      .title .accent {
+        color: var(--accent);
+        font-style: italic;
+      }
+
+      .title .strike {
+        text-decoration: line-through;
+        text-decoration-color: var(--accent2);
+        text-decoration-thickness: 6px;
+        color: var(--muted);
+      }
+
+      .sub {
+        font-family: var(--mono);
+        font-size: 22px;
+        line-height: 1.4;
+        color: #c0c0c0;
+        max-width: 900px;
+        z-index: 1;
+      }
+
+      .sub strong {
+        color: var(--text);
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 1;
+      }
+
+      .stats {
+        display: flex;
+        gap: 56px;
+      }
+
+      .stat-num {
+        font-family: var(--sans);
+        font-size: 56px;
+        font-weight: 900;
+        color: var(--accent);
+        line-height: 1;
+      }
+
+      .stat-label {
+        font-family: var(--mono);
+        font-size: 13px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-top: 6px;
+      }
+
+      .url {
+        font-family: var(--mono);
+        font-size: 18px;
+        color: var(--muted);
+      }
+
+      .url-host {
+        color: var(--accent);
+      }
+
+      .border-frame {
+        position: absolute;
+        inset: 24px;
+        border: 1px solid var(--border);
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="border-frame"></div>
+
+      <div>
+        <div class="label">The LLM Coding Failure Field Guide</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 28px">
+        <h1 class="title">
+          Your AI agent has <span class="accent">12</span><br />
+          <span class="strike">failure modes</span>.
+        </h1>
+        <p class="sub">
+          <strong>One file. 11 principles.</strong> Helps catch the 12 most common
+          ways AI coding agents fail. Drop <strong>CLAUDE.md</strong> in any project.
+        </p>
+      </div>
+
+      <div class="footer">
+        <div class="stats">
+          <div>
+            <div class="stat-num">11</div>
+            <div class="stat-label">Principles</div>
+          </div>
+          <div>
+            <div class="stat-num">12</div>
+            <div class="stat-label">Failure modes</div>
+          </div>
+          <div>
+            <div class="stat-num">1</div>
+            <div class="stat-label">File</div>
+          </div>
+        </div>
+        <div class="url">
+          <span class="url-host">github.com</span>/bettercallsundim/vibechecks
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

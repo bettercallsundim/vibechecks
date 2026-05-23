@@ -1,0 +1,32 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "vibechecks",
+  "description": "The LLM Coding Failure Field Guide — 11 principles and 12 named failure modes packaged for Claude Code.",
+  "owner": {
+    "name": "Vibechecks contributors"
+  },
+  "metadata": {
+    "description": "One-plugin marketplace. Hosts vibechecks.",
+    "homepage": "https://bettercallsundim.github.io/vibechecks/"
+  },
+  "plugins": [
+    {
+      "name": "vibechecks",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "11 principles + 12 named failure modes for Claude Code. Cuts hallucinations, drive-by refactors, sycophancy, and symptom-patching.",
+      "author": {
+        "name": "Vibechecks contributors"
+      },
+      "category": "development",
+      "homepage": "https://bettercallsundim.github.io/vibechecks/",
+      "keywords": [
+        "claude-code",
+        "guidelines",
+        "agent-rules",
+        "karpathy",
+        "llm-failure-modes"
+      ]
+    }
+  ]
+}
